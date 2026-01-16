@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+    <form action="/submit" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br><br>
+
+        <label for="bio">Biografia:</label>
+        <textarea id="bio" name="bio" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="checkbox" id="aceito" name="aceito">
+        <label for="aceito">Aceito os termos e condições</label>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
