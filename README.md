@@ -83,5 +83,6 @@ Se quiser deixar o README ainda mais completo, você pode adicionar:
 ✔️ Badges de tecnologias usadas
 ✔️ Informações sobre você — autor do projeto
 
-Se quiser, posso gerar o README pronto com badges, imagens e melhorias visuais! É só dizer 👍
+👍
+
 
