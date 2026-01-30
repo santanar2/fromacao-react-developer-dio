@@ -1,46 +1,38 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const { Resolver } = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    devtool: "source-map",
-    entry: "./src/index.js",
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
-            },
+  entry: './src/index.js',  // ← mude de index.jsx para index.js
 
-            {
-                test: /\.html$/,
-                use: [{ loader: "html-loader"}]
-            },
-
-            {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"]
-            },
-
-            {
-                test: /\.(png|jpe?g|gif|svg)$/i,
-                use: ["file-loader"]
-            },
-
-        ]
-    },
-    Resolver: {
-        extensions: ['.js', '.jsx']
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./public/index.html",
-            filename: "index.html"
-        })
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
     ]
-
-    
-}
+  },
+  resolve: {  // ← AQUI: "resolve" com "r" minúsculo
+    extensions: ['.js', '.jsx']
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    })
+  ],
+  devServer: {
+    port: 3000,
+    hot: true
+  }
+};
