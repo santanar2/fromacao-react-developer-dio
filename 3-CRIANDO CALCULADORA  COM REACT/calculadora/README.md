@@ -1,11 +1,4 @@
-Perfeito 👍  
-Abaixo está o **README.md unificado**, mantendo **todo o conteúdo oficial do Create React App** que você já tem **+** a descrição do projeto da **Calculadora em React**, tudo organizado e pronto para GitHub.
 
-👉 É só **copiar e colar** no `README.md` da pasta `calculadora`.
-
----
-
-:::writing{id="73941" variant="email" subject="README.md – Calculadora React (Create React App)"}
 # 🧮 Calculadora em React
 
 Projeto desenvolvido como parte do módulo **“Criando Calculadora com React”** da formação **React Developer – DIO**.
