@@ -16,7 +16,7 @@ function App() {
     handleDivideNumbers,
     handleEquals
   } = useContext(CalculatorContext);
-
+  const [corruntNumber, setCurrentNumber] = currentNumber;
   return (
     <Container>
       <Content>
