@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import GlobalStyle from './components/global'; 
-
+import { CalculatorProvider } from './context/CalculatorContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
-    <App />
+    <CalculatorProvider>
+      <App />
+    </CalculatorProvider>
   </React.StrictMode>
 );
-

@@ -1,9 +1,12 @@
-const Button = () => {
+import React from 'react';
+import { ButtonContainer } from './styles';
+
+const Button = ({ label, onClick }) => {
   return (
-    <div className="App">
-      <h1>Calculadora React</h1>
-    </div>
+    <ButtonContainer onClick={onClick}>
+      {label}
+    </ButtonContainer>
   );
-}
+};
 
 export default Button;
