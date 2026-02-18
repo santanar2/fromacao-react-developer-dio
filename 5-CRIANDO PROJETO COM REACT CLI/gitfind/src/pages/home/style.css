@@ -18,17 +18,19 @@
   z-index: -1;
 }
 
-.info {
-  width: 60%;
+.perfil-info {
+  margin-left: 10px;
   color: white;
   font-size: 24px;
-  margin-top: 80px;
-  right: -100px;
+  margin-top: -30px;
 }
 
+
 .github-logo {
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  display: flex;  
+  margin: 70px 0 0 -200px;
 }
 
 input {
@@ -56,3 +58,52 @@ button {
   right: 210px;
   top: 40px;
 }
+
+.perfil {
+  display: flex;  
+  margin: 120px 0 0 570px;
+  
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 3px solid #e5e5e5;
+  margin-right: 32px;
+  
+  
+}
+
+.profile h3 {
+  color: #999999;
+  font-size: 24px;
+  margin: 0;
+}
+
+.perfil span {
+  display: block;
+  color: #999999;
+  font-size: 24px;
+  margin: 10px;
+
+}
+
+.perfil p {
+  color: #999999;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 10px 10px 565px;
+
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+
+
+
