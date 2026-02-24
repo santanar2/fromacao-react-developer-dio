@@ -1,45 +1,124 @@
+import { useState } from "react";
 import Header from "../../components/header";
 import ItemList from "../../components/ItemList";
 import githubLogo from "../../assets/github.png";
-import "./style.css"; // CSS da página Home, se houver
+import "./style.css";
 
 function Home() {
+  const [user, setUser] = useState("");
+  const [currentUser, setCurrentUser] = useState(null);
+  const [repositories, setRepositories] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleGetData = async () => {
+    // 🔒 Não faz nada se estiver vazio
+    if (!user.trim()) {
+      setError("Digite um usuário para buscar.");
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+
+    try {
+      const userResponse = await fetch(
+        `https://api.github.com/users/${user}`
+      );
+
+      if (!userResponse.ok) {
+        setError("Usuário não encontrado.");
+        setLoading(false);
+        return;
+      }
+
+      const userData = await userResponse.json();
+
+      const repoResponse = await fetch(
+        `https://api.github.com/users/${user}/repos`
+      );
+
+      const repoData = await repoResponse.json();
+
+      // 🔥 Só atualiza se tudo deu certo
+      setCurrentUser(userData);
+      setRepositories(repoData);
+
+    } catch (err) {
+      setError("Erro ao buscar dados.");
+      console.error(err);
+    }
+
+    setLoading(false);
+  };
+
   return (
     <div className="container">
       <Header />
 
       <div className="content">
 
+        {/* 🔎 Busca */}
         <div className="search">
-          <input name="usuario" placeholder="@username" />
-          <button>Buscar</button>
-        </div>
-
-        <div className="profile">
-          <img 
-            src="https://avatars.githubusercontent.com/u/167146512?v=4"
-            className="profile-img"
-            alt="profile"
+          <input
+            name="usuario"
+            value={user}
+            onChange={(event) => setUser(event.target.value)}
+            placeholder="@username"
           />
-
-          <div>
-            <h3>Ricardo Honório de Santana</h3>
-            <span>@santanar2</span>
-            <p>Descrição</p>
-          </div>
+          <button onClick={handleGetData} disabled={loading}>
+            {loading ? "Carregando..." : "Buscar"}
+          </button>
         </div>
 
-        <hr />
+        {/* ❌ Mensagem de erro */}
+        {error && <p style={{ color: "red" }}>{error}</p>}
 
-        <h4>Repositórios</h4>
+        {/* 👤 Perfil */}
+        {currentUser && (
+          <div className="profile">
+            <img
+              src={currentUser.avatar_url}
+              className="profile-img"
+              alt="profile"
+            />
 
-        <ItemList title="teste1" description="descrição teste1" />
-        <ItemList title="teste2" description="descrição teste2" />
-        <ItemList title="teste3" description="descrição teste3" />
+            <div>
+              <h3>{currentUser.name || ""}</h3>
+              <span>@{currentUser.login}</span>
+              <p>{currentUser.bio || "Sem descrição disponível"}</p>
+              <p>
+                Seguidores: {currentUser.followers} | 
+                Seguindo: {currentUser.following} | 
+                Repositórios: {currentUser.public_repos}
+              </p>
+            </div>
+          </div>
+        )}
 
+        {currentUser && <hr />}
+
+        {/* 📦 Repositórios */}
+        {repositories.length > 0 && (
+          <>
+            <h4>Repositórios</h4>
+
+            {repositories.map((repo) => (
+              <ItemList
+                key={repo.id}
+                title={repo.name}
+                description={repo.description || "Sem descrição"}
+              />
+            ))}
+          </>
+        )}
       </div>
 
-      <img src={githubLogo} alt="github" className="background-logo"/>
+      <img
+        src={githubLogo}
+        alt="github"
+        className="background-logo"
+      />
     </div>
   );
 }
