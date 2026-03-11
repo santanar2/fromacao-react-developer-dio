@@ -6,9 +6,8 @@ const Home = () => {
     <>
       <h1>Home</h1>
 
-      
-      <Button title="" variant="secondary" />
-      <Button/>
+      <Button title="Teste1" />
+      <Button title="Teste2" variant="secondary" />
 
       <Link to="/login">Ir para o login</Link>
 
