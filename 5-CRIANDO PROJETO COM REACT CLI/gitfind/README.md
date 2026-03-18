@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# ⚛️ Criando Projeto com React CLI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido com o objetivo de aprender a criar aplicações **React JS** utilizando ferramentas de linha de comando (CLI), otimizando o processo de configuração e inicialização de projetos Front-end.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Objetivo
 
-### `npm start`
+* Compreender como utilizar o React CLI para criação de projetos
+* Entender a estrutura padrão gerada automaticamente
+* Trabalhar com componentes React
+* Executar aplicação em ambiente de desenvolvimento
+* Aplicar boas práticas de organização de código
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Conceitos Trabalhados
 
-### `npm test`
+* Criação de projeto com CLI
+* Estrutura padrão React
+* Componentes funcionais
+* JSX
+* Execução com Node e NPM
+* Organização de arquivos
+* Produtividade no desenvolvimento Front-end
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 💻 Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React JS
+* JavaScript
+* HTML5
+* CSS3
+* Node.js
+* NPM
+* Git e GitHub
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Estrutura do Projeto
 
-### `npm run eject`
+```bash
+src/
+ ├── App.js
+ ├── index.js
+ ├── components/
+ └── assets/
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ▶️ Como Executar o Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone o repositório:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/santanar2/fromacao-react-developer-dio.git
+```
 
-## Learn More
+Entre na pasta do projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd 5-CRIANDO-PROJETO-COM-REACT-CLI
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Instale as dependências:
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Execute a aplicação:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🎯 Aprendizados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este projeto permitiu compreender:
 
-### Advanced Configuration
+* Como iniciar rapidamente aplicações React
+* Como organizar estrutura de componentes
+* Como executar e testar projetos localmente
+* Como utilizar ferramentas modernas de desenvolvimento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 👨‍💻 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Ricardo Honório de Santana**
 
-### `npm run build` fails to minify
+🎓 Estudante de Análise e Desenvolvimento de Sistemas
+💻 Técnico em Telecomunicações e Redes
+🚀 Em transição para Desenvolvimento Front-end com React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+⭐ Se este projeto te ajudou ou foi interessante, deixe uma estrela no repositório!
