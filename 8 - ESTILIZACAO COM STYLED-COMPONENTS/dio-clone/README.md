@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# 🎨 Estilização com Styled Components no React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido com o objetivo de aprender e aplicar a biblioteca **Styled Components**, utilizada para estilização de aplicações React utilizando o conceito de **CSS-in-JS**.
 
-## Available Scripts
+Este projeto demonstra a criação de interfaces modernas, componentizadas e com melhor organização visual.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Objetivo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Aprender estilização moderna em React
+* Trabalhar com CSS-in-JS
+* Criar componentes visuais reutilizáveis
+* Melhorar organização de estilos
+* Construir layouts responsivos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 Conceitos Trabalhados
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Styled Components
+* Componentização visual
+* Props para estilização dinâmica
+* Responsividade
+* Organização de layout
+* Separação de responsabilidades
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 💻 Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React JS
+* JavaScript
+* Styled Components
+* HTML5
+* CSS3
+* Git e GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+✅ Interface moderna
+✅ Componentes estilizados
+✅ Layout organizado
+✅ Responsividade
+✅ Código limpo e reutilizável
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Estrutura do Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── styles/
+ ├── App.js
+ └── index.js
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ▶️ Como Executar o Projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone o repositório:
 
-### Code Splitting
+```bash
+git clone https://github.com/santanar2/fromacao-react-developer-dio.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Entre na pasta do projeto:
 
-### Analyzing the Bundle Size
+```bash
+cd 8-ESTILIZACAO-COM-STYLED-COMPONENTS
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Instale as dependências:
 
-### Making a Progressive Web App
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Execute:
 
-### Advanced Configuration
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🎯 Aprendizados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Este projeto permitiu compreender:
 
-### `npm run build` fails to minify
+* Como utilizar Styled Components em aplicações React
+* Como criar estilos reutilizáveis
+* Como organizar layout moderno
+* Como desenvolver interfaces responsivas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 👨‍💻 Autor
+
+**Ricardo Honório de Santana**
+
+🎓 Estudante de Análise e Desenvolvimento de Sistemas
+💻 Técnico em Telecomunicações e Redes
+🚀 Em transição para Desenvolvimento Front-end com React
+
+---
+
+⭐ Se gostou do projeto, deixe uma estrela no repositório!
