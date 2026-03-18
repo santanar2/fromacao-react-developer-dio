@@ -1,155 +1,105 @@
+# 🧮 Calculadora React
 
-# 🧮 Calculadora em React
-
-Projeto desenvolvido como parte do módulo **“Criando Calculadora com React”** da formação **React Developer – DIO**.
-
-A aplicação consiste em uma **calculadora funcional**, com operações matemáticas básicas, construída utilizando **React.js**, com foco no aprendizado de componentes, estados e eventos.
+Aplicação de calculadora desenvolvida com **React JS**, com o objetivo de praticar conceitos fundamentais do desenvolvimento Front-end moderno, como gerenciamento de estado, manipulação de eventos e construção de interfaces interativas.
 
 ---
 
-## 🚀 Sobre o Projeto
+## 🚀 Demonstração
 
-Este projeto tem como objetivo praticar os conceitos fundamentais do React, incluindo:
-
-- Criação e organização de componentes  
-- Manipulação de estado  
-- Eventos de clique  
-- Estruturação de uma aplicação React  
-- Boas práticas de organização de código  
+Esta aplicação simula o funcionamento de uma calculadora tradicional, permitindo ao usuário realizar operações matemáticas básicas de forma dinâmica.
 
 ---
 
-## ✨ Funcionalidades
+## 🧠 Conceitos Trabalhados
 
-- ➕ Adição  
-- ➖ Subtração  
-- ✖️ Multiplicação  
-- ➗ Divisão  
-- 🧼 Limpar valores  
-- 🖥️ Interface simples e intuitiva  
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **React.js**
-- **JavaScript (ES6+)**
-- **HTML5**
-- **CSS3**
-- **Create React App**
+* Gerenciamento de estado com **useState**
+* Componentização
+* Manipulação de eventos
+* Renderização dinâmica de dados
+* Organização de layout
+* Lógica de operações matemáticas
+* Boas práticas em React
 
 ---
 
-## 📁 Estrutura do Projeto
+## 💻 Tecnologias Utilizadas
 
+* React JS
+* JavaScript
+* HTML5
+* CSS3
+* Node.js
+* Git e GitHub
+
+---
+
+## ⚙️ Funcionalidades
+
+✅ Inserção de números
+✅ Operações básicas (+ − × ÷)
+✅ Cálculo do resultado
+✅ Botão para limpar visor
+✅ Interface simples e funcional
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+src/
+ ├── components/
+ │    ├── Button
+ │    └── Display
+ ├── App.js
+ ├── index.js
+ └── styles/
 ```
-calculadora/
-├── public/
-├── src/
-│   ├── components/
-│   ├── App.js
-│   ├── index.js
-│   └── styles.js (ou css)
-├── package.json
-└── README.md
+
+---
+
+## ▶️ Como Executar o Projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/santanar2/fromacao-react-developer-dio.git
+```
+
+Entre na pasta da calculadora:
+
+```bash
+cd 3-CRIANDO-CALCULADORA-COM-REACT/calculadora
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute a aplicação:
+
+```bash
+npm start
 ```
 
 ---
 
-# Getting Started with Create React App
+## 🎯 Objetivo do Projeto
 
-This project was bootstrapped with  
-[Create React App](https://github.com/facebook/create-react-app).
-
----
-
-## 📦 Available Scripts
-
-No diretório do projeto, você pode executar:
-
-### `npm cd calculadora`
-### `npm start`
-
-Executa o aplicativo em modo de desenvolvimento.  
-Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
-
-A página será recarregada sempre que você fizer alterações.  
-Você também poderá ver erros de lint no console.
+Este projeto foi desenvolvido para consolidar conhecimentos iniciais em React, com foco na criação de aplicações interativas e organização de componentes reutilizáveis.
 
 ---
 
-### `npm test`
+## 👨‍💻 Autor
 
-Inicia o test runner em modo interativo.  
-Mais informações em:  
-https://facebook.github.io/create-react-app/docs/running-tests
+**Ricardo Honório de Santana**
 
----
-
-### `npm run build`
-
-Gera a versão de produção do aplicativo na pasta `build`.
-
-- O React é otimizado para produção  
-- Os arquivos são minificados  
-- Os nomes dos arquivos incluem hashes  
-
-O aplicativo estará pronto para deploy.
-
-Mais informações:  
-https://facebook.github.io/create-react-app/docs/deployment
+🎓 Estudante de Análise e Desenvolvimento de Sistemas
+💻 Técnico em Telecomunicações e Redes
+🚀 Em transição para Desenvolvimento Front-end
 
 ---
 
-### `npm run eject`
-
-⚠️ **Atenção: esta é uma operação irreversível!**
-
-Remove a abstração do Create React App e copia todas as configurações (Webpack, Babel, ESLint, etc.) para o projeto, dando total controle sobre o build.
-
-Você **não é obrigado** a usar este comando.  
-Ele é indicado apenas quando há necessidade de customizações avançadas.
-
----
-
-## 📚 Learn More
-
-- Create React App Docs:  
-  https://facebook.github.io/create-react-app/docs/getting-started
-
-- React Documentation:  
-  https://reactjs.org/
-
----
-
-### Code Splitting
-https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
----
-
-## 📝 Observação Final
-
-Este projeto foi desenvolvido com **fins educacionais**, podendo ser evoluído com:
-
-- Histórico de operações  
-- Suporte a teclado físico  
-- Melhorias visuais  
-- Temas (dark/light)  
-
----
+⭐ Se este projeto te ajudou ou foi interessante, deixe uma estrela no repositório!
 

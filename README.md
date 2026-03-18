@@ -1,88 +1,147 @@
- # 🚀 fromacao-react-developer-dio
+# 🚀 Formação React Developer – Jornada de Projetos
 
-Repositório com projetos desenvolvidos durante a **Formação React Developer** da Digital Innovation One (DIO) — incluindo exemplos de aplicações feitas com **React**, como calculadora e outros componentes do curso. :contentReference[oaicite:2]{index=2}
+Este repositório reúne todos os exercícios e projetos desenvolvidos durante minha jornada de aprendizado em **React JS**, com foco na construção de interfaces modernas, componentização e boas práticas de desenvolvimento Front-end.
 
-## 📌 Descrição
+📌 Objetivo: evoluir tecnicamente e construir um portfólio sólido para atuação como Desenvolvedor Front-end.
 
-Este repositório contém exercícios e projetos práticos realizados como parte do treinamento **React Developer**, onde exploramos:
+---
 
-- 💡 Criação de aplicações com **React.js**
-- 📍 Estrutura de componentes, estado e props
-- 🧠 Hooks básicos como `useState` e `useEffect`
-- 🎨 Estilização com CSS
-- 🧪 Exemplos de desafios propostos pela DIO (calculadora, componentes básicos, etc.)
+## 🧠 Competências Desenvolvidas
 
-> Projeto criado durante a formação React Developer, focado em aprender a biblioteca React implementando aplicações reais. :contentReference[oaicite:3]{index=3}
+Durante os exercícios foram praticados:
 
-## 📁 Estrutura do Repositório
+* Criação de aplicações React do zero
+* Componentização e reutilização de código
+* Gerenciamento de estado
+* Navegação entre páginas (rotas)
+* Consumo de APIs REST
+* Estilização com CSS moderno e Styled Components
+* Responsividade com Flexbox e Grid
+* Organização de projetos profissionais
+* Versionamento com Git e GitHub
 
-fromacao-react-developer-dio/
-├── 1-FRONTEND/ # Exercícios e projetos React
-│ ├── dio/ # Configuração inicial
-│ └── calculadora/ # Calculadora com React
-├── .gitignore
-├── README.md # Esse arquivo
-└── package.json # Dependências do projeto
+---
 
-markdown
-Copiar código
+## 📂 Estrutura dos Projetos
 
-## 🚀 Tecnologias Utilizadas
+### 📁 1 – Fundamentos Front-end
 
-⚙️ Principais tecnologias:
+Introdução aos conceitos base de desenvolvimento web.
 
-- **React.js** — Biblioteca para construção de interfaces reativas  
-- **JavaScript (ES6+)** — Lógica do projeto  
-- **HTML & CSS** — Marcação e estilos  
-- **Node.js & npm** — Gerenciamento de dependências
+**Tecnologias:**
 
-## 🛠️ Como Rodar o Projeto Localmente
+* HTML
+* CSS
+* JavaScript
 
-1. **Clone o repositório**
+---
+
+### 📁 2 – Criando Primeiro Projeto React
+
+Configuração inicial de ambiente React e estrutura básica.
+
+**Aprendizados:**
+
+* JSX
+* Componentes
+* Props
+
+---
+
+### 📁 3 – Calculadora com React
+
+Projeto prático aplicando estado e eventos.
+
+**Conceitos:**
+
+* useState
+* Manipulação de eventos
+* Renderização dinâmica
+
+---
+
+### 📁 4 – Criando Projeto React do Zero
+
+Configuração manual e entendimento do funcionamento interno.
+
+**Conceitos:**
+
+* Estrutura de pastas
+* Build e execução
+
+---
+
+### 📁 5 – React CLI
+
+Automação de criação de projetos e produtividade.
+
+---
+
+### 📁 6 – Wiki de Repositórios GitHub
+
+Aplicação com integração à API pública do GitHub.
+
+**Funcionalidades:**
+
+* Busca de usuários
+* Listagem de repositórios
+* Consumo de API REST
+* Interface responsiva
+
+---
+
+### 📁 7 – Conceitos do React CLI
+
+Estudo aprofundado de ferramentas e comandos.
+
+---
+
+### 📁 8 – Estilização com Styled Components
+
+Aplicação prática de CSS-in-JS.
+
+**Conceitos:**
+
+* Componentização visual
+* Responsividade
+* Layout moderno
+
+---
+
+## 🚀 Como Executar os Projetos
+
+Entre na pasta do projeto desejado:
 
 ```bash
-git clone https://github.com/santanar2/fromacao-react-developer-dio.git
-Entre no diretório principal do projeto
-
-bash
-Copiar código
-cd fromacao-react-developer-dio
-Instale as dependências
-
-bash
-Copiar código
 npm install
-Inicie a aplicação
-
-bash
-Copiar código
 npm start
-📌 A aplicação será aberta no navegador automaticamente (geralmente em http://localhost:3000).
+```
 
-📌 Funcionalidades (Exemplo)
-🧮 Calculadora (projeto React)
-Operações básicas: adição, subtração, multiplicação e divisão
+---
 
-Interface simples e responsiva
+## 🎯 Objetivo Profissional
 
-Componente React funcional utilizando useState
+Este repositório faz parte da minha preparação para atuar como **Desenvolvedor Front-end React**, consolidando conhecimentos práticos em:
 
-Essa funcionalidade exemplifica o uso de React para lógica de interface e estados. 
-GitHub
+* Desenvolvimento de interfaces
+* Integração com APIs
+* Boas práticas de código
+* Estruturação de projetos reais
 
-📚 Referências
-Este projeto está alinhado com os módulos e desafios da Formação React Developer da DIO — com foco em práticas e aplicações reais para desenvolvimento web com React. 
-GitHub
+---
 
-⭐ Dicas (opcional)
-Se quiser deixar o README ainda mais completo, você pode adicionar:
+## 👨‍💻 Autor
 
-✔️ Imagens e GIFs das telas
-✔️ Links para live deploy (Netlify, Vercel etc)
-✔️ Lista de funcionalidades por projeto
-✔️ Badges de tecnologias usadas
-✔️ Informações sobre você — autor do projeto
+**Ricardo Honório de Santana**
 
-👍
+🎓 Estudante de Análise e Desenvolvimento de Sistemas
+💻 Técnico em Telecomunicações e Redes
+🚀 Em transição para área de Desenvolvimento Front-end
 
+📎 LinkedIn
+📎 GitHub
+
+---
+
+⭐ Se este repositório te ajudou ou foi interessante, deixe uma estrela!
 
