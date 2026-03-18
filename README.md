@@ -1,76 +1,116 @@
-# 🚀 Formação React Developer – Projetos e Estudos
+# 🚀 Formação React Developer – Jornada de Projetos
 
-Repositório com os projetos desenvolvidos durante a formação **React Developer**.
-Aqui aplico conceitos modernos de desenvolvimento Front-end utilizando React e boas práticas de mercado.
+Este repositório reúne todos os exercícios e projetos desenvolvidos durante minha jornada de aprendizado em **React JS**, com foco na construção de interfaces modernas, componentização e boas práticas de desenvolvimento Front-end.
 
----
-
-## 📌 Objetivo
-
-Este repositório tem como objetivo:
-
-* Consolidar conhecimentos em **React**
-* Praticar **componentização e reutilização de código**
-* Trabalhar com **consumo de APIs**
-* Implementar **roteamento entre páginas**
-* Criar interfaces **responsivas e modernas**
-* Desenvolver projetos para **portfólio profissional**
+📌 Objetivo: evoluir tecnicamente e construir um portfólio sólido para atuação como Desenvolvedor Front-end.
 
 ---
 
-## 🧠 Tecnologias Utilizadas
+## 🧠 Competências Desenvolvidas
 
-* React JS
+Durante os exercícios foram praticados:
+
+* Criação de aplicações React do zero
+* Componentização e reutilização de código
+* Gerenciamento de estado
+* Navegação entre páginas (rotas)
+* Consumo de APIs REST
+* Estilização com CSS moderno e Styled Components
+* Responsividade com Flexbox e Grid
+* Organização de projetos profissionais
+* Versionamento com Git e GitHub
+
+---
+
+## 📂 Estrutura dos Projetos
+
+### 📁 1 – Fundamentos Front-end
+
+Introdução aos conceitos base de desenvolvimento web.
+
+**Tecnologias:**
+
+* HTML
+* CSS
 * JavaScript
-* HTML5
-* CSS3
-* Styled Components
-* Git e GitHub
-* Consumo de API REST
 
 ---
 
-## 💻 Projetos Desenvolvidos
+### 📁 2 – Criando Primeiro Projeto React
 
-### 🔎 Wiki de Repositórios GitHub
+Configuração inicial de ambiente React e estrutura básica.
 
-Aplicação que permite buscar usuários do GitHub e visualizar seus repositórios.
+**Aprendizados:**
+
+* JSX
+* Componentes
+* Props
+
+---
+
+### 📁 3 – Calculadora com React
+
+Projeto prático aplicando estado e eventos.
+
+**Conceitos:**
+
+* useState
+* Manipulação de eventos
+* Renderização dinâmica
+
+---
+
+### 📁 4 – Criando Projeto React do Zero
+
+Configuração manual e entendimento do funcionamento interno.
+
+**Conceitos:**
+
+* Estrutura de pastas
+* Build e execução
+
+---
+
+### 📁 5 – React CLI
+
+Automação de criação de projetos e produtividade.
+
+---
+
+### 📁 6 – Wiki de Repositórios GitHub
+
+Aplicação com integração à API pública do GitHub.
 
 **Funcionalidades:**
 
 * Busca de usuários
 * Listagem de repositórios
-* Integração com API pública
+* Consumo de API REST
 * Interface responsiva
 
 ---
 
-### 📺 Clone Interface YouTube (em desenvolvimento)
+### 📁 7 – Conceitos do React CLI
 
-Projeto focado em layout moderno e responsividade.
+Estudo aprofundado de ferramentas e comandos.
 
-**Conceitos aplicados:**
+---
 
-* Flexbox
-* Grid Layout
+### 📁 8 – Estilização com Styled Components
+
+Aplicação prática de CSS-in-JS.
+
+**Conceitos:**
+
+* Componentização visual
 * Responsividade
-* Componentização
+* Layout moderno
 
 ---
 
-## 🎯 Aprendizados
+## 🚀 Como Executar os Projetos
 
-Durante o desenvolvimento destes projetos foram praticados:
-
-* Organização de estrutura React
-* Gerenciamento de estado
-* Navegação entre páginas
-* Integração com serviços externos
-* Boas práticas de versionamento com Git
-
----
-
-## 🚀 Como Executar o Projeto
+Entre na pasta do projeto desejado:
 
 ```bash
 npm install
@@ -79,19 +119,29 @@ npm start
 
 ---
 
+## 🎯 Objetivo Profissional
+
+Este repositório faz parte da minha preparação para atuar como **Desenvolvedor Front-end React**, consolidando conhecimentos práticos em:
+
+* Desenvolvimento de interfaces
+* Integração com APIs
+* Boas práticas de código
+* Estruturação de projetos reais
+
+---
+
 ## 👨‍💻 Autor
 
 **Ricardo Honório de Santana**
 
-* Técnico em Telecom / Redes
-* Estudante de Análise e Desenvolvimento de Sistemas
-* Focado em transição para área de Desenvolvimento Front-end
+🎓 Estudante de Análise e Desenvolvimento de Sistemas
+💻 Técnico em Telecomunicações e Redes
+🚀 Em transição para área de Desenvolvimento Front-end
 
-📌 Conecte-se comigo no LinkedIn
-📌 Veja meus outros projetos no GitHub
+📎 LinkedIn
+📎 GitHub
 
 ---
 
-⭐ Se este projeto te ajudou ou foi interessante, deixe uma estrela no repositório!
-
+⭐ Se este repositório te ajudou ou foi interessante, deixe uma estrela!
 
