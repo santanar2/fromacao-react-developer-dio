@@ -2,7 +2,7 @@
 
 Este repositório reúne todos os exercícios e projetos desenvolvidos durante minha jornada de aprendizado em **React JS**, com foco na construção de interfaces modernas, componentização e boas práticas de desenvolvimento Front-end.
 
-📌 Objetivo: evoluir tecnicamente e construir um portfólio sólido para atuação como Desenvolvedor Front-end.
+📌 **Objetivo:** evoluir tecnicamente e construir um portfólio sólido para atuação como Desenvolvedor Front-end.
 
 ---
 
@@ -17,6 +17,7 @@ Durante os exercícios foram praticados:
 * Consumo de APIs REST
 * Estilização com CSS moderno e Styled Components
 * Responsividade com Flexbox e Grid
+* Manipulação de formulários
 * Organização de projetos profissionais
 * Versionamento com Git e GitHub
 
@@ -108,6 +109,34 @@ Aplicação prática de CSS-in-JS.
 
 ---
 
+### 📁 9 – Hooks Básicos
+
+Introdução prática aos principais hooks do React.
+
+**Conceitos:**
+
+* useState
+* useEffect
+* useMemo
+* useCallback
+* Ciclo de vida de componentes
+
+---
+
+### 📁 10 – Hook Forms
+
+Aplicação de formulários performáticos com React Hook Form.
+
+**Conceitos:**
+
+* useForm
+* Validação de formulários
+* Controle de inputs
+* Integração com APIs
+* Melhor performance em formulários React
+
+---
+
 ## 🚀 Como Executar os Projetos
 
 Entre na pasta do projeto desejado:
@@ -123,7 +152,7 @@ npm start
 
 Este repositório faz parte da minha preparação para atuar como **Desenvolvedor Front-end React**, consolidando conhecimentos práticos em:
 
-* Desenvolvimento de interfaces
+* Desenvolvimento de interfaces modernas
 * Integração com APIs
 * Boas práticas de código
 * Estruturação de projetos reais
@@ -138,10 +167,11 @@ Este repositório faz parte da minha preparação para atuar como **Desenvolvedo
 💻 Técnico em Telecomunicações e Redes
 🚀 Em transição para área de Desenvolvimento Front-end
 
-📎 LinkedIn
-📎 GitHub
+🔗 [LinkedIn](https://www.linkedin.com/)
+🔗 [GitHub](https://github.com/santanar2/fromacao-react-developer-dio)
 
 ---
 
 ⭐ Se este repositório te ajudou ou foi interessante, deixe uma estrela!
+
 
