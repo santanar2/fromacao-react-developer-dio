@@ -1,0 +1,10 @@
+{
+"users": [
+    {"id": 1, "name": "Alice", "email": "alice@example.com", "password": "password123"},
+    {"id": 2, "name": "Bob", "email": "bob@example.com", "password": "password456"}
+],
+"posts": [
+    {"id": 1, "userId": 1, "title": "Alice's First Post", "content": "This is the content of Alice's first post."},
+    {"id": 2, "userId": 2, "title": "Bob's First Post", "content": "This is the content of Bob's first post."}
+]   
+}   
