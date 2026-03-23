@@ -1,104 +1,89 @@
-# 🎨 Estilização com Styled Components no React
+📌 Projeto: Formulários com React Hook Form + Axios
 
-Projeto desenvolvido com o objetivo de aprender e aplicar a biblioteca **Styled Components**, utilizada para estilização de aplicações React utilizando o conceito de **CSS-in-JS**.
+Este projeto faz parte da formação React Developer da DIO, com foco na utilização de hooks básicos, manipulação de formulários e integração com APIs.
 
-Este projeto demonstra a criação de interfaces modernas, componentizadas e com melhor organização visual.
+🚀 Tecnologias utilizadas
+React
+React Hook Form
+Axios
+JavaScript (ES6+)
+HTML5 e CSS3
+🎯 Objetivo do projeto
 
----
+O objetivo principal é demonstrar na prática:
 
-## 🚀 Objetivo
+Criação e controle de formulários no React
+Validação de campos de forma simples e performática
+Uso do hook useForm
+Envio de dados para APIs externas
+Organização de código com boas práticas
 
-* Aprender estilização moderna em React
-* Trabalhar com CSS-in-JS
-* Criar componentes visuais reutilizáveis
-* Melhorar organização de estilos
-* Construir layouts responsivos
+O projeto segue a proposta da formação, que inclui criação de interfaces dinâmicas e integração com serviços externos
 
----
+🧠 Conceitos aplicados
+🔹 React Hook Form
 
-## 🧠 Conceitos Trabalhados
+Utilizado para gerenciar formulários de forma eficiente, evitando re-renderizações desnecessárias.
 
-* Styled Components
-* Componentização visual
-* Props para estilização dinâmica
-* Responsividade
-* Organização de layout
-* Separação de responsabilidades
+Principais recursos usados:
 
----
+register → registrar campos
+handleSubmit → controlar envio
+formState.errors → validação
+🔹 Axios
 
-## 💻 Tecnologias Utilizadas
+Utilizado para realizar requisições HTTP, permitindo integração com APIs externas.
 
-* React JS
-* JavaScript
-* Styled Components
-* HTML5
-* CSS3
-* Git e GitHub
+Exemplo de uso:
 
----
+axios.post('https://api.exemplo.com', data)
+🔹 Hooks do React
 
-## ⚙️ Funcionalidades
+O projeto também aplica conceitos fundamentais de hooks como:
 
-✅ Interface moderna
-✅ Componentes estilizados
-✅ Layout organizado
-✅ Responsividade
-✅ Código limpo e reutilizável
+useState
+useEffect
 
----
+Os hooks permitem gerenciar estado e ciclo de vida em componentes funcionais
 
-## 📂 Estrutura do Projeto
-
-```bash
+📂 Estrutura do projeto
 src/
- ├── components/
- ├── pages/
- ├── styles/
- ├── App.js
- └── index.js
-```
+│── components/
+│── pages/
+│── services/
+│   └── api.js   // configuração do axios
+│── App.js
+│── index.js
 
----
+⚙️ Como executar o projeto
 
-## ▶️ Como Executar o Projeto
-
-Clone o repositório:
-
-```bash
+1 - Clone o repositório:
 git clone https://github.com/santanar2/fromacao-react-developer-dio.git
-```
 
-Entre na pasta do projeto:
+2 - Acesse a pasta:
+cd hooks-basicos
 
-```bash
-cd 8-ESTILIZACAO-COM-STYLED-COMPONENTS
-```
-
-Instale as dependências:
-
-```bash
+3 - Instale as dependências:
 npm install
-```
 
-Execute:
-
-```bash
+4 - Execute o projeto:
 npm start
-```
 
----
+📡 Exemplo de funcionalidade:
 
-## 🎯 Aprendizados
+Preenchimento de formulário
+Validação de campos obrigatórios
+Envio de dados para API
+Feedback no console ou interface
 
-Este projeto permitiu compreender:
+💡 Aprendizados:
 
-* Como utilizar Styled Components em aplicações React
-* Como criar estilos reutilizáveis
-* Como organizar layout moderno
-* Como desenvolver interfaces responsivas
+Durante o desenvolvimento deste projeto, foi possível aprender:
 
----
+Como trabalhar com formulários performáticos no React
+Como integrar frontend com APIs
+Boas práticas de organização de código
+Uso eficiente de hooks
 
 ## 👨‍💻 Autor
 
