@@ -1,77 +1,55 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  background-color: #151515;
-  width: 100%;
-  height: 47px;
+export const Container = styled.header`
+  background: #0A0A0A;
+  height: 70px;
   display: flex;
-  justify-content: center;
   align-items: center;
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 80%;
-  height: 47px;
-
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+  padding: 0 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 `;
 
-export const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+export const Logo = styled.div`
+  font-size: 28px;
+  font-weight: 800;
+  color: #FFFFFF;
+  cursor: pointer;
+  span {
+    color: #E23DD7;
+  }
 `;
 
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const BuscarInputContainer = styled.div`
-  width: 175px;
-  height: 30px;
-  background-color: #2d2d37;
-  border-radius: 8px;
-  padding: 2px 5px;
-  margin: 0 12px;
-
+export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 32px;
 `;
 
-export const Menu = styled.a`
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  line-height: 25px;
-  color: #ffffff;
-  margin-right: 12px;
+export const NavLink = styled.a`
+  color: #FFFFFF;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    color: #E23DD7;
+  }
+
+  ${({ active }) => active && `
+    color: #E23DD7;
+  `}
 `;
 
-export const MenuRight = styled.a`
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  line-height: 25px;
-  color: #ffffff;
-  margin-right: 12px;
-  text-decoration: none;
-`;
-
-export const UserPicture = styled.img`
-  width: 32px;
-  height: 32px;
-  border-radius: 22px;
-  border: 2px solid #ffffff;
-`;
-
-export const Input = styled.input`
-  background-color: transparent;
-  flex: 1;
-  border: 0;
-  color: #ffffff;
+export const UserAvatar = styled.img`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #E23DD7;
 `;

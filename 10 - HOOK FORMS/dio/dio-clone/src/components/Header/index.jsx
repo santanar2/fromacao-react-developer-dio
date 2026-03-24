@@ -1,50 +1,38 @@
-import React from "react";
-import logo from "../../assets/logo-dio.png";
+import { useNavigate } from "react-router-dom";
+import { FiLogOut } from "react-icons/fi"; // opcional
 
-import {
-  BuscarInputContainer,
-  Container,
-  Input,
-  Menu,
-  MenuRight,
-  Row,
-  UserPicture,
-  Wrapper
+import { 
+  Container, 
+  Logo, 
+  Nav, 
+  NavLink, 
+  UserAvatar 
 } from "./styles";
 
-const Header = (autenticado) => {
+function Header({ isLoggedIn = false }) {  // ← adicionamos essa prop
+  const navigate = useNavigate();
+
   return (
-    <Wrapper>
-      <Container>
+    <Container>
+      <Logo onClick={() => navigate("/")}>
+        dio<span>.</span>
+      </Logo>
 
-        <Row>
-          <img src={logo} alt="Logo da Dio" />
-          {autenticado ? (
-            <>
-            <BuscarInputContainer>
-            <Input placeholder="Buscar..." />
-            </BuscarInputContainer>
-            <Menu href="#">Live Code</Menu>
-            <Menu href="#">Global</Menu>
-          </>
-          ) : null}
-        </Row>
+      <Nav>
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/login">Entrar</NavLink>
+        <NavLink href="/cadastro" active>Cadastrar</NavLink>
 
-        <Row> 
-          {autenticado ? (
-            <UserPicture src="https://avatars.githubusercontent.com/u/167146512?v=4" />
-          ) : (
-            <>           
-          <MenuRight href="#">Home</MenuRight>
-          <MenuRight href="#">Entrar</MenuRight>
-          <MenuRight href="#">Cadastrar</MenuRight>
-          </>
-          )}
-        </Row>
-
-      </Container>
-    </Wrapper>
+        {isLoggedIn && (
+          <UserAvatar 
+            src="https://via.placeholder.com/40" 
+            alt="Perfil" 
+            onClick={() => navigate("/feed")}
+          />
+        )}
+      </Nav>
+    </Container>
   );
-};
+}
 
 export default Header;

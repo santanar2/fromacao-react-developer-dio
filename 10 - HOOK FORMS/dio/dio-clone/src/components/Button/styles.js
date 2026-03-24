@@ -1,37 +1,47 @@
 import styled, { css } from "styled-components";
 
 export const ButtonContainer = styled.button`
-  background: #565656;
+  width: 100%;
+  height: 48px;
   border-radius: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
   position: relative;
 
-  color: #ffffff;
-  padding: 2px 12px;
-  min-width: 120px;
-  width: 100%;
-  
+  /* Variante Primária - Rosa (igual da DIO) */
+  ${({ variant }) => variant === "primary" && css`
+    background-color: #E23DD7;
+    color: #FFFFFF;
 
-  ${({ variant }) =>
-    variant === "primary" &&
-    css`
-      min-width: 167px;
-      height: 33px;
-      background: #e4105d;
+    &:hover {
+      background-color: #c12bb8;
+      transform: translateY(-2px);
+    }
 
-      &:hover {
-        opacity: 0.6;
-        cursor: pointer;
-      }
+    &:active {
+      transform: scale(0.98);
+    }
+  `}
 
-      &::after {
-        content: "";
-        position: absolute;
-        border: 1px solid #e4105d;
-        top: -5px;
-        left: -6px;
-        width: calc(100% + 10px);
-        height: calc(100% + 10px);
-        border-radius: 22px;
-      }
-    `}
+  /* Variante Secundária (caso precise usar em outro lugar) */
+  ${({ variant }) => variant === "secondary" && css`
+    background-color: #565656;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: #6b6b6b;
+    }
+  `}
+
+  /* Estado desabilitado */
+  &:disabled {
+    background-color: #444;
+    color: #888;
+    cursor: not-allowed;
+    transform: none;
+  }
 `;

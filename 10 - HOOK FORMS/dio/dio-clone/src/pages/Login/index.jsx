@@ -43,26 +43,27 @@ function Login() {
 
   const onSubmit = async (data) => {
   try {
-    const response = await api.get(
-      `users?email=${data.email}&password=${data.password}`
-    );
+    const response = await api.get(`/users?email=${data.email}`);
 
-    console.log("retorno api", response.data);
+    const user = response.data[0];
 
-    if (response.data.length > 0) {
+    if (user && user.password === data.password) {
+      // Salva o usuário logado (importante para depois)
+      localStorage.setItem("user", JSON.stringify(user));
+      
+      alert("Login realizado com sucesso!");
       navigate("/feed");
     } else {
-      alert("Usuário ou senha inválidos");
+      alert("Email ou senha inválidos!");
     }
-
   } catch (error) {
     console.error(error);
-    alert("Houve um erro, tente novamente.");
+    alert("Erro ao fazer login. Tente novamente.");
   }
 };
   return (
     <>
-      <Header />
+      <Header isLoggedIn={false} />
 
       <Container>
         <Column>
