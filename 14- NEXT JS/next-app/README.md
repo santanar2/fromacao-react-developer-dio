@@ -1,36 +1,190 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Este é um projeto Next.js criado com o `create-next-app`.
 
-## Getting Started
+## 🚀 Primeiros Passos
 
-First, run the development server:
+Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000 no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode começar a editar a página modificando o arquivo `app/page.tsx`. A página será atualizada automaticamente conforme você salva as alterações.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este projeto utiliza o `next/font` para otimizar e carregar automaticamente a fonte Geist, uma nova família tipográfica da Vercel.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 Navegação no Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📁 Estrutura de Rotas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O Next.js utiliza o sistema de App Router, onde a estrutura de pastas define as rotas:
 
-## Deploy on Vercel
+* `app/page.tsx` → Página inicial (`/`)
+* `app/login/page.tsx` → Página de login (`/login`)
+* `app/auth/page.tsx` → Página de autenticação (`/auth`)
+* `app/produto/page.tsx` → Página de produtos (`/produto`)
+* `app/produto/[id]/page.tsx` → Página dinâmica (`/produto/:id`)
+* `app/produto/categoria/page.tsx` → Página de categorias (`/produto/categoria`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔗 Navegação com Link
+
+Use o componente `Link` do Next.js para navegar entre páginas:
+
+```tsx
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <nav>
+      <Link href="/login">Login</Link>
+      <Link href="/produto">Produtos</Link>
+      <Link href="/auth">Autenticação</Link>
+    </nav>
+  );
+}
+```
+
+---
+
+### 🔄 Navegação Programática
+
+Use o hook `useRouter` para navegação programática:
+
+```tsx
+'use client';
+
+import { useRouter } from 'next/navigation';
+
+export default function MyComponent() {
+  const router = useRouter();
+
+  return (
+    <button onClick={() => router.push('/login')}>
+      Ir para Login
+    </button>
+  );
+}
+```
+
+---
+
+## 🔐 Autenticação com NextAuth
+
+### ⚙️ Configuração
+
+A configuração do NextAuth está em `app/api/auth/[...nextauth]/route.ts`:
+
+```tsx
+import NextAuth from "next-auth";
+import GitHub from "next-auth/providers/github";
+
+export const { auth, handlers } = NextAuth({
+  providers: [
+    GitHub({
+      clientId: process.env.GITHUB_ID!,
+      clientSecret: process.env.GITHUB_SECRET!,
+    }),
+  ],
+});
+
+export const GET = handlers.GET;
+export const POST = handlers.POST;
+```
+
+---
+
+### 🌱 Variáveis de Ambiente
+
+Crie um arquivo `.env.local` na raiz do projeto:
+
+```env
+GITHUB_ID=seu_github_id
+GITHUB_SECRET=seu_github_secret
+NEXTAUTH_SECRET=sua_chave_secreta_aleatoria
+NEXTAUTH_URL=http://localhost:3000
+```
+
+---
+
+### 👤 Usando Sessão
+
+Para acessar a sessão do usuário, use o hook `useSession()`:
+
+```tsx
+'use client';
+
+import { useSession, signIn, signOut } from "next-auth/react";
+
+export default function LoginPage() {
+  const session = useSession();
+
+  if (session?.data?.user) {
+    return (
+      <div>
+        <p>Bem-vindo, {session.data.user.email}!</p>
+        <button onClick={() => signOut()}>Sair</button>
+      </div>
+    );
+  }
+
+  return (
+    <button onClick={() => signIn('github')}>
+      Entrar com GitHub
+    </button>
+  );
+}
+```
+
+---
+
+### 🔒 Proteger Páginas
+
+Use middleware para proteger rotas:
+
+```tsx
+// middleware.ts
+import type { NextRequest } from 'next/server';
+import { auth } from '@/app/api/auth/[...nextauth]/route';
+
+export async function middleware(request: NextRequest) {
+  const session = await auth();
+  
+  if (!session && request.nextUrl.pathname.startsWith('/protected')) {
+    return Response.redirect(new URL('/login', request.url));
+  }
+}
+
+export const config = {
+  matcher: ['/protected/:path*'],
+};
+```
+
+---
+
+## 📚 Saiba Mais
+
+Para aprender mais sobre Next.js, veja os seguintes recursos:
+
+* Documentação do Next.js — funcionalidades e API
+* Aprenda Next.js — tutorial interativo
+
+Você também pode conferir o repositório no GitHub — seu feedback e contribuições são bem-vindos!
+
+---
+
+## 🚀 Deploy na Vercel
+
+A forma mais fácil de publicar sua aplicação Next.js é utilizando a plataforma Vercel.
+
+Confira a documentação de deploy para mais detalhes.
